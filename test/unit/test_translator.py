@@ -18,7 +18,7 @@ def test_llm_normal_translation(mock_chat):
 def test_llm_english_detection(mock_chat):
     mock_chat.return_value = {
         'message': {
-            'content': 'LANGUAGE: English\nTRANSLATION: This is an English message'
+            'content': 'English'
         }
     }
     
